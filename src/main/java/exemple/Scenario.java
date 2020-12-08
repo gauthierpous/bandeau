@@ -21,11 +21,11 @@ public class Scenario {
         this.b = b;
     }
     
-    public void addEffets(Effet effet){
+    public void ajouterEffet(Effet effet){
         this.lesEffets.add(effet);
     }
     
-    public void afficheScenario(){
+    public void executer(){
         lesEffets.forEach((e) -> {
             e.afficher();
             b.sleep(1000);

@@ -10,12 +10,12 @@ public class ExempleDUtilisation {
         Bandeau bandeau = new Bandeau();
         Scenario scenario = new Scenario(bandeau);
         
-        scenario.addEffets(new Clignotant("Je clignote 5 fois", 5, bandeau));
-        scenario.addEffets(new Zoom("Je zoome 3 fois", 3, bandeau));
-        scenario.addEffets(new Rotation("Je tourne 2 fois", 2, bandeau));
+        scenario.ajouterEffet(new Clignotant("Je clignote 5 fois", 5, bandeau));
+        scenario.ajouterEffet(new Zoom("Je zoome 3 fois", 3, bandeau));
+        scenario.ajouterEffet(new Rotation("Je tourne 2 fois", 2, bandeau));
         
         
-        scenario.afficheScenario();
+        scenario.executer();
    }
         
         /*
